@@ -1,0 +1,171 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  font-family: sans-serif;
+}
+
+body > header {
+  text-align: center;
+  font-size: 1.9em;
+  padding: 5px 0;
+  background-color: rgba(5, 94, 164, 0.9);
+  color: #DDD;
+  color: white;
+}
+
+body > header p {
+  margin: 10px;
+}
+
+#main {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+/*#main > div {
+  display: inline-block;
+  height: 90%;
+}*/
+
+#map {
+  height: 93%;
+}
+
+#filters {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #F0ECE1;
+  vertical-align: top;
+  box-shadow: 4px 0px 5px #888888;
+  height: 93%;
+  transition-property: left;
+  transition-duration: 1s;
+}
+
+#main > #filters.collapsed {
+  left: -208px;
+}
+
+#filters div#control {
+  position: absolute;
+  top: 45%;
+  left: 99%;
+  background: url("../img/openclose.png");
+  background-position: 224px 0;
+  background-size: cover;
+  display: block;
+  height: 75px;
+  width: 32px;
+  cursor: pointer;
+  transition-property: left;
+  transition-duration: 1s;
+  background-color: #F0ECE1;
+  box-shadow: 4px 0px 5px #888888;
+  border-radius: 3px;
+}
+
+#filters div#control.in {
+  background-position: 402px 0;
+}
+
+#filter-list {
+  list-style-type: none;
+  padding-left: 15px;
+}
+
+#filter-list li {
+  margin: 10px 0;
+}
+
+#filter-list input {
+  margin-right: 5px;
+}
+
+#categories {
+  padding:  20px;
+  margin-bottom: 25px;
+  height: 100%;
+  overflow: scroll;
+}
+
+#categories button{
+  padding: 8px;
+  border-radius: 6px;
+  background-color: rgba(5, 94, 164, 0.9);
+  color: white;
+  font-weight: bold;
+  font-size: 13px;
+  margin-right: 10px;
+  border: 1px solid rgba(5, 94, 164, 0.9);
+  cursor: pointer;
+  }
+
+  div.info-content {
+    padding: 5px;
+    width: 350px;
+    text-align:  center;
+    max-height: 350px;
+    overflow: scroll;
+  }
+
+  div.info-content .truck-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+div.info-content table {
+    font-size: 13px;
+    font-family: sans-serif;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+div.info-content table th {
+/*background-color: #237326;*/
+background-color: rgba(5, 94, 164, 0.9);
+color: white;
+vertical-align: top;
+}
+
+div.info-content table td, div.info-content table th{
+  border: 1px solid #ddd;
+  text-align: left;
+  padding: 8px
+}
+
+div.info-content table tr:nth-child(even){
+  background-color: #f2f2f2
+}
+
+div.info-content table ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+input#foodsearch {
+  display: block;
+  width: 94%;
+  padding: 2px 4px;
+  font-size: 14px;
+  height: 25px;
+  border-radius: 6px;
+  border: none;
+}
+
+div#categories hr {
+  margin: 20px 0;
+}
+
+div#categories h4 {
+  margin-bottom: 10px;
+}
